@@ -54,4 +54,14 @@ require_contains "$WORKFLOW_FILE" "pull_request:"
 require_contains "$WORKFLOW_FILE" "push:"
 require_contains "$WORKFLOW_FILE" "sh tests/validate_repo.sh"
 
+if grep -Eq '^- \*\*.*`Links:|^- \*\*.*`Tags:' "$README_FILE"; then
+  echo "README entry metadata must not be wrapped in backticks" >&2
+  exit 1
+fi
+
+if grep -Eq '^- \*\*.*`Links:|^- \*\*.*`Tags:' "$CONTRIBUTING_FILE"; then
+  echo "CONTRIBUTING template metadata must not be wrapped in backticks" >&2
+  exit 1
+fi
+
 echo "repository structure checks passed"

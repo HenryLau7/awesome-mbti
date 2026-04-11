@@ -26,7 +26,7 @@
 ## 条目模板
 
 ```md
-- **[项目名](主链接)** — 一句话说明它是什么、为什么值得收录。 `Links: [Demo](...) / [Repo](...) / [Paper](...) / [Post](...)` `Tags: viral, research-inspired, demo`
+- **[项目名](主链接)** — 一句话说明它是什么、为什么值得收录。 Links: [Demo](...) / [Repo](...) / [Paper](...) / [Post](...). Tags: `viral`, `research-inspired`, `demo`
 ```
 
 建议：
