@@ -41,3 +41,13 @@
 - 描述不夸大科学性或严肃性。
 - 标签和分类相互一致。
 - README 条目格式与现有条目保持一致。
+
+## Validation
+
+提交前可以在仓库根目录执行：
+
+```sh
+sh tests/validate_repo.sh
+```
+
+这个脚本会检查 README、收录规范和 CI workflow 是否都在位。GitHub Actions 也会在 `push` 和 `pull_request` 时自动运行同一套校验。

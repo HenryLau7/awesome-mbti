@@ -23,9 +23,11 @@ require_contains() {
 
 README_FILE="$ROOT_DIR/README.md"
 CONTRIBUTING_FILE="$ROOT_DIR/CONTRIBUTING.md"
+WORKFLOW_FILE="$ROOT_DIR/.github/workflows/validate.yml"
 
 require_file "$README_FILE"
 require_file "$CONTRIBUTING_FILE"
+require_file "$WORKFLOW_FILE"
 
 require_contains "$README_FILE" "# awesome-bti"
 require_contains "$README_FILE" "科学有效性"
@@ -43,5 +45,13 @@ require_contains "$README_FILE" "Tags:"
 require_contains "$CONTRIBUTING_FILE" "# Contributing"
 require_contains "$CONTRIBUTING_FILE" "## 收录标准"
 require_contains "$CONTRIBUTING_FILE" "## 条目模板"
+require_contains "$CONTRIBUTING_FILE" "## Validation"
+require_contains "$CONTRIBUTING_FILE" "sh tests/validate_repo.sh"
+
+require_contains "$WORKFLOW_FILE" "name: Validate"
+require_contains "$WORKFLOW_FILE" "on:"
+require_contains "$WORKFLOW_FILE" "pull_request:"
+require_contains "$WORKFLOW_FILE" "push:"
+require_contains "$WORKFLOW_FILE" "sh tests/validate_repo.sh"
 
 echo "repository structure checks passed"
