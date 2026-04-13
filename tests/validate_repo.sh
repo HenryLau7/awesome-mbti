@@ -29,7 +29,7 @@ require_file "$README_FILE"
 require_file "$CONTRIBUTING_FILE"
 require_file "$WORKFLOW_FILE"
 
-require_contains "$README_FILE" "# awesome-bti"
+require_contains "$README_FILE" "# awesome-mbti"
 require_contains "$README_FILE" "科学有效性"
 require_contains "$README_FILE" "## 标签说明"
 require_contains "$README_FILE" "## Viral / Meme / Parody"
