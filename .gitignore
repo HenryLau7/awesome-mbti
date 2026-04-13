@@ -1,2 +1,8 @@
+# Local working files
+new.md
+newly.md
+
+# Local tool directories
 .worktrees/
 .gstack/
+.claude/
