@@ -6,7 +6,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**收录各种 MBTI-like 衍生人格测试、研究演示与社区项目的 curated list。**
+**收录各种 MBTI-like 衍生人格测试合集。**
 
 [Website](https://www.awesome-mbti.com/) | [投稿指南](CONTRIBUTING.md)
 
