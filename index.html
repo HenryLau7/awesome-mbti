@@ -135,9 +135,15 @@
     border-radius: var(--radius-md);
     font-size: 13px;
     color: var(--text-muted);
-    max-width: 520px;
+    max-width: 680px;
     line-height: 1.6;
   }
+
+  .hero-note a {
+    color: var(--accent-5);
+    text-decoration: none;
+  }
+  .hero-note a:hover { text-decoration: underline; }
 
   .hero-links {
     display: flex;
@@ -179,6 +185,7 @@
     padding: 16px 24px 0;
     font-size: 14px;
     color: var(--text-muted);
+    line-height: 1.7;
   }
 
   .content {
@@ -359,7 +366,7 @@
       收录各种 MBTI-like 衍生人格测试合集。
     </p>
     <div class="hero-note" data-pretext>
-      这里的项目横跨娱乐、梗图、研究展示与半严肃工具，<strong>科学有效性</strong>差异很大。默认把它们视为互联网文化项目或产品案例，而不是心理测量学背书。
+      这里的项目横跨娱乐、梗图、研究展示与半严肃工具，<strong>科学有效性</strong>差异很大。默认把它们视为互联网文化项目或产品案例，而不是心理测量学背书。本仓库仅做收录，不代表对任何测试具有倾向认同，请大家自行判断。内容为手工录入，如有错误，请联系作者：<a href="mailto:yuanyeliu7@gmail.com">yuanyeliu7@gmail.com</a>。
     </div>
     <div class="hero-links">
       <a href="https://github.com/HenryLau7/awesome-mbti" class="hero-link primary" target="_blank" rel="noopener">
@@ -371,45 +378,10 @@
   </div>
 </header>
 
-<div class="count-bar" id="projects">11 个项目</div>
+<div class="count-bar" id="projects">18 个项目 · 按项目名中的英文缩写或拉丁字母标识首字母排序，纯中文名称项目置后。</div>
 
 <main class="content">
   <div class="projects-list">
-
-    <article class="project-card">
-      <div class="project-top">
-        <div class="project-name"><a href="https://github.com/UnluckyNinja/SBTI-test" target="_blank" rel="noopener">SBTI</a></div>
-        <span class="project-credit">by 蛆肉儿串儿@B站</span>
-        <div class="project-links">
-          <a href="https://www.sbti.to/en/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
-          <a href="https://github.com/UnluckyNinja/SBTI-test" class="project-link" target="_blank" rel="noopener"><svg class="gh-icon" width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Repo</a>
-        </div>
-      </div>
-      <p class="project-desc" data-pretext>近期最具传播性的 X-BTI 代表之一，把 MBTI 式问卷改造成更强互联网梗感、分享感和角色标签感的人格测试。</p>
-    </article>
-
-    <article class="project-card">
-      <div class="project-top">
-        <div class="project-name"><a href="https://lxsti.dev/" target="_blank" rel="noopener">LXSTI (留学生人格测试)</a></div>
-        <span class="project-credit">by MemoryPillow@小红书</span>
-        <div class="project-links">
-          <a href="https://lxsti.dev/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
-        </div>
-      </div>
-      <p class="project-desc" data-pretext>留学生生存图鉴主题的 16 人格测试，以留学生活场景为切入点，匹配不同的留学生存人格类型。</p>
-    </article>
-
-    <article class="project-card">
-      <div class="project-top">
-        <div class="project-name"><a href="https://github.com/HenryLau7/research-mbti" target="_blank" rel="noopener">RBTI （科研人格测试）</a></div>
-        <span class="project-credit">by <a href="https://github.com/HenryLau7" target="_blank" rel="noopener">@HenryLau7</a></span>
-        <div class="project-links">
-          <a href="https://research-mbti.com/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
-          <a href="https://github.com/HenryLau7/research-mbti" class="project-link" target="_blank" rel="noopener"><svg class="gh-icon" width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Repo</a>
-        </div>
-      </div>
-      <p class="project-desc" data-pretext>以 research demo 的表达方式包装 MBTI-type 体验，兼有在线展示和代码仓库。</p>
-    </article>
 
     <article class="project-card">
       <div class="project-top">
@@ -425,46 +397,46 @@
 
     <article class="project-card">
       <div class="project-top">
-        <div class="project-name"><a href="https://xwxq55hqiyjx.meoo.info/#/" target="_blank" rel="noopener">历史学人格测试</a></div>
-        <span class="project-credit">by asukasuki</span>
-        <div class="project-links">
-          <a href="https://xwxq55hqiyjx.meoo.info/#/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
-        </div>
-      </div>
-      <p class="project-desc" data-pretext>基于四大维度、32 道题目，匹配陈寅恪、钱穆、布罗代尔、黄仁宇等 16 位史学宗师。</p>
-    </article>
-
-    <article class="project-card">
-      <div class="project-top">
-        <div class="project-name"><a href="https://tsti.murouane.com/" target="_blank" rel="noopener">TSTI (泰勒斯测试)</a></div>
-        <span class="project-credit">by 慕容元夜@小红书</span>
-        <div class="project-links">
-          <a href="https://tsti.murouane.com/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
-        </div>
-      </div>
-      <p class="project-desc" data-pretext>Taylor Swift 主题的人格测试，围绕霉霉粉丝圈层设计。</p>
-    </article>
-
-    <article class="project-card">
-      <div class="project-top">
-        <div class="project-name"><a href="https://ppty.pages.dev" target="_blank" rel="noopener">PPTY (乒乓球人格测试)</a></div>
-        <span class="project-credit">by 呵呦呦呦呦</span>
-        <div class="project-links">
-          <a href="https://ppty.pages.dev" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
-        </div>
-      </div>
-      <p class="project-desc" data-pretext>乒乓球主题的人格测试。</p>
-    </article>
-
-    <article class="project-card">
-      <div class="project-top">
-        <div class="project-name"><a href="https://sjti.netlify.app" target="_blank" rel="noopener">SJTI (交通大学人格测试)</a></div>
+        <div class="project-name"><a href="https://arti-jianrenceshi.netlify.app/" target="_blank" rel="noopener">ACTI (建人测试)</a></div>
         <span class="project-credit"><span class="unclaimed">待认领</span></span>
         <div class="project-links">
-          <a href="https://sjti.netlify.app" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
+          <a href="https://arti-jianrenceshi.netlify.app/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
         </div>
       </div>
-      <p class="project-desc" data-pretext>交通大学主题的人格测试。</p>
+      <p class="project-desc" data-pretext>建 人 测 试 共20道题 · 7个维度 · 10种人格，本测试平等地攻击每一位建筑从业者。</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <div class="project-name"><a href="https://bmti-badminton-12type-test-gq0opb.leapi.cc/" target="_blank" rel="noopener">BMTI (羽毛球人格测试)</a></div>
+        <span class="project-credit">by 正直球场@小红书</span>
+        <div class="project-links">
+          <a href="https://bmti-badminton-12type-test-gq0opb.leapi.cc/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
+        </div>
+      </div>
+      <p class="project-desc" data-pretext>羽毛球 12 型人格测试。</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <div class="project-name"><a href="https://cbti.codefather.cn/" target="_blank" rel="noopener">CBTI (程序员行为类型测试)</a></div>
+        <span class="project-credit">by 程序员鱼皮@B站</span>
+        <div class="project-links">
+          <a href="https://cbti.codefather.cn/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
+        </div>
+      </div>
+      <p class="project-desc" data-pretext>你是 SUDO 还是 NULL？是 996 还是 404？30 道题，测出你的编程人格。</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <div class="project-name"><a href="https://cpti-mu.vercel.app/" target="_blank" rel="noopener">CPTI (嗑学人格)</a></div>
+        <span class="project-credit">by 元气小羊饲养员@小红书</span>
+        <div class="project-links">
+          <a href="https://cpti-mu.vercel.app/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
+        </div>
+      </div>
+      <p class="project-desc" data-pretext>测试你的嗑学人格类型。</p>
     </article>
 
     <article class="project-card">
@@ -481,6 +453,96 @@
 
     <article class="project-card">
       <div class="project-top">
+        <div class="project-name"><a href="https://marketing.ths123.com/gbti" target="_blank" rel="noopener">GBTI (股市)</a></div>
+        <span class="project-credit">by 同花顺公司</span>
+        <div class="project-links">
+          <a href="https://marketing.ths123.com/gbti" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
+        </div>
+      </div>
+      <p class="project-desc" data-pretext>20 道题，测试你的交易人格。</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <div class="project-name"><a href="https://lxsti.dev/" target="_blank" rel="noopener">LXSTI (留学生人格测试)</a></div>
+        <span class="project-credit">by MemoryPillow@小红书</span>
+        <div class="project-links">
+          <a href="https://lxsti.dev/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
+        </div>
+      </div>
+      <p class="project-desc" data-pretext>留学生生存图鉴主题的 16 人格测试，以留学生活场景为切入点，匹配不同的留学生存人格类型。</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <div class="project-name"><a href="https://miaobti.icu/" target="_blank" rel="noopener">MiaoBTI (猫格测试)</a></div>
+        <span class="project-credit">by PIUPAW比爪@小红书</span>
+        <div class="project-links">
+          <a href="https://miaobti.icu/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
+        </div>
+      </div>
+      <p class="project-desc" data-pretext>测试你的猫格类型。</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <div class="project-name"><a href="https://ppty.pages.dev" target="_blank" rel="noopener">PPTY (乒乓球人格测试)</a></div>
+        <span class="project-credit">by 呵呦呦呦呦</span>
+        <div class="project-links">
+          <a href="https://ppty.pages.dev" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
+        </div>
+      </div>
+      <p class="project-desc" data-pretext>乒乓球主题的人格测试。</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <div class="project-name"><a href="https://github.com/HenryLau7/research-mbti" target="_blank" rel="noopener">RBTI （科研人格测试）</a></div>
+        <span class="project-credit">by <a href="https://github.com/HenryLau7" target="_blank" rel="noopener">@HenryLau7</a></span>
+        <div class="project-links">
+          <a href="https://research-mbti.com/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
+          <a href="https://github.com/HenryLau7/research-mbti" class="project-link" target="_blank" rel="noopener"><svg class="gh-icon" width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Repo</a>
+        </div>
+      </div>
+      <p class="project-desc" data-pretext>以 research demo 的表达方式包装 MBTI-type 体验，兼有在线展示和代码仓库。</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <div class="project-name"><a href="https://github.com/UnluckyNinja/SBTI-test" target="_blank" rel="noopener">SBTI</a></div>
+        <span class="project-credit">by 蛆肉儿串儿@B站</span>
+        <div class="project-links">
+          <a href="https://www.sbti.to/en/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
+          <a href="https://github.com/UnluckyNinja/SBTI-test" class="project-link" target="_blank" rel="noopener"><svg class="gh-icon" width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Repo</a>
+        </div>
+      </div>
+      <p class="project-desc" data-pretext>近期最具传播性的 X-BTI 代表之一，把 MBTI 式问卷改造成更强互联网梗感、分享感和角色标签感的人格测试。</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <div class="project-name"><a href="https://sdtis.com/" target="_blank" rel="noopener">SDTI</a></div>
+        <span class="project-credit"><span class="unclaimed">待认领</span></span>
+        <div class="project-links">
+          <a href="https://sdtis.com/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
+        </div>
+      </div>
+      <p class="project-desc" data-pretext>新型人格测试。</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <div class="project-name"><a href="https://sjti.netlify.app" target="_blank" rel="noopener">SJTI (交通大学人格测试)</a></div>
+        <span class="project-credit"><span class="unclaimed">待认领</span></span>
+        <div class="project-links">
+          <a href="https://sjti.netlify.app" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
+        </div>
+      </div>
+      <p class="project-desc" data-pretext>交通大学主题的人格测试。</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
         <div class="project-name"><a href="https://tjti.netlify.app/" target="_blank" rel="noopener">TJTI (同济大学人格测试)</a></div>
         <span class="project-credit">by logex自然对@小红书</span>
         <div class="project-links">
@@ -492,13 +554,35 @@
 
     <article class="project-card">
       <div class="project-top">
-        <div class="project-name"><a href="https://bmti-badminton-12type-test-gq0opb.leapi.cc/" target="_blank" rel="noopener">BMTI (羽毛球人格测试)</a></div>
-        <span class="project-credit">by 正直球场@小红书</span>
+        <div class="project-name"><a href="https://tsti.murouane.com/" target="_blank" rel="noopener">TSTI (泰勒斯测试)</a></div>
+        <span class="project-credit">by 慕容元夜@小红书</span>
         <div class="project-links">
-          <a href="https://bmti-badminton-12type-test-gq0opb.leapi.cc/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
+          <a href="https://tsti.murouane.com/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
         </div>
       </div>
-      <p class="project-desc" data-pretext>羽毛球 12 型人格测试。</p>
+      <p class="project-desc" data-pretext>Taylor Swift 主题的人格测试，围绕霉霉粉丝圈层设计。</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <div class="project-name"><a href="https://aipage.roboneo.com/0bmen4u358ze2epk/index.html" target="_blank" rel="noopener">三丽鸥人格测试</a></div>
+        <span class="project-credit"><span class="unclaimed">待认领</span></span>
+        <div class="project-links">
+          <a href="https://aipage.roboneo.com/0bmen4u358ze2epk/index.html" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
+        </div>
+      </div>
+      <p class="project-desc" data-pretext>测测你像三丽鸥中的哪一个角色？</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <div class="project-name"><a href="https://xwxq55hqiyjx.meoo.info/#/" target="_blank" rel="noopener">历史学人格测试</a></div>
+        <span class="project-credit">by asukasuki</span>
+        <div class="project-links">
+          <a href="https://xwxq55hqiyjx.meoo.info/#/" class="project-link" target="_blank" rel="noopener"><svg class="demo-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg> Demo</a>
+        </div>
+      </div>
+      <p class="project-desc" data-pretext>基于四大维度、32 道题目，匹配陈寅恪、钱穆、布罗代尔、黄仁宇等 16 位史学宗师。</p>
     </article>
 
   </div>
