@@ -1,2 +1,8 @@
 .worktrees/
 .gstack/
+new.md
+.claude
+.github
+.gitignore
+tests
+pretext.js
