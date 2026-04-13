@@ -32,6 +32,7 @@
 | **HERTI (她的人格地图)** | 历史隐藏了她们, 但你的灵魂里,有一块碎片, 正以她的频率震动。 | Rheaa/VanessaAsher@小红书 | [Demo](https://herti.us) |
 | **LXSTI (留学生人格测试)** | 留学生生存图鉴主题的 16 人格测试，以留学生活场景为切入点，匹配不同的留学生存人格类型。 | MemoryPillow@小红书 | [Demo](https://lxsti.dev/) |
 | **MiaoBTI (猫格测试)** | 测试你的猫格类型。 | PIUPAW比爪@小红书 | [Demo](https://miaobti.icu/) |
+| **MUSICALTI (音乐剧人格测试)** | 你的百老汇灵魂密码。 | *待认领* | [Demo](https://pub-98e77454d5fc46438fe6f46cf574e4e5.r2.dev/%E9%9F%B3%E4%B9%90%E5%89%A7%E4%BA%BA%E6%A0%BC%E6%B5%8B%E8%AF%95.html) |
 | **PPTY (乒乓球人格测试)** | 乒乓球主题的人格测试。 | 呵呦呦呦呦 | [Demo](https://ppty.pages.dev) |
 | **RBTI （科研人格测试）** | 以 research demo 的表达方式包装 MBTI-type 体验，兼有在线展示和代码仓库。 | [@HenryLau7](https://github.com/HenryLau7) | [Demo](https://research-mbti.com/) / [Repo](https://github.com/HenryLau7/research-mbti) |
 | **SBTI** | 近期最具传播性的 X-BTI 代表之一，把 MBTI 式问卷改造成更强互联网梗感、分享感和角色标签感的人格测试。 | 蛆肉儿串儿@B站 | [Demo](https://www.sbti.to/en/) / [Repo](https://github.com/UnluckyNinja/SBTI-test) |
