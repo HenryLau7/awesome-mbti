@@ -6,3 +6,6 @@ newly.md
 .worktrees/
 .gstack/
 .claude/
+CLAUDE.md
+
+.gitignore
