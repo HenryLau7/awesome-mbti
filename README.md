@@ -39,6 +39,7 @@
 | **SJTI (交通大学人格测试)** | 交通大学主题的人格测试。 | *待认领* | [Demo](https://sjti.netlify.app) |
 | **TJTI (同济大学人格测试)** | 同济大学主题的人格测试。 | logex自然对@小红书 | [Demo](https://tjti.netlify.app/) |
 | **TSTI (泰勒斯测试)** | Taylor Swift 主题的人格测试，围绕霉霉粉丝圈层设计。 | 慕容元夜@小红书 | [Demo](https://tsti.murouane.com/) |
+| **VAETI （呼吸之野）** | 十首歌，十种人格。在歌词的呼吸里，找到你灵魂栖居的那片旷野。 | 木尧工作室 | [Demo](http://101.42.231.244:12514/) |
 | **三丽鸥人格测试** | 测测你像三丽鸥中的哪一个角色？ | *待认领* | [Demo](https://aipage.roboneo.com/0bmen4u358ze2epk/index.html) |
 | **历史学人格测试** | 基于四大维度、32 道题目，匹配陈寅恪、钱穆、布罗代尔、黄仁宇等 16 位史学宗师。 | asukasuki | [Demo](https://xwxq55hqiyjx.meoo.info/#/) |
 
