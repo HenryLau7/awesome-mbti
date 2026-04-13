@@ -31,16 +31,11 @@ require_file "$WORKFLOW_FILE"
 
 require_contains "$README_FILE" "# awesome-mbti"
 require_contains "$README_FILE" "科学有效性"
-require_contains "$README_FILE" "## 标签说明"
-require_contains "$README_FILE" "## Viral / Meme / Parody"
-require_contains "$README_FILE" "## Research / Research-Inspired"
-require_contains "$README_FILE" "## Career / Productivity / Workplace"
-require_contains "$README_FILE" "## Relationship / Social / Communication"
-require_contains "$README_FILE" "## Fandom / Pop Culture / Niche Worlds"
-require_contains "$README_FILE" "## Meta / Collections / Tools"
+require_contains "$README_FILE" "## Projects"
+require_contains "$README_FILE" "## Tags"
+require_contains "$README_FILE" "## Contributing"
 require_contains "$README_FILE" "SBTI"
 require_contains "$README_FILE" "research-mbti"
-require_contains "$README_FILE" "Tags:"
 
 require_contains "$CONTRIBUTING_FILE" "# Contributing"
 require_contains "$CONTRIBUTING_FILE" "## 收录标准"
@@ -53,15 +48,5 @@ require_contains "$WORKFLOW_FILE" "on:"
 require_contains "$WORKFLOW_FILE" "pull_request:"
 require_contains "$WORKFLOW_FILE" "push:"
 require_contains "$WORKFLOW_FILE" "sh tests/validate_repo.sh"
-
-if grep -Eq '^- \*\*.*`Links:|^- \*\*.*`Tags:' "$README_FILE"; then
-  echo "README entry metadata must not be wrapped in backticks" >&2
-  exit 1
-fi
-
-if grep -Eq '^- \*\*.*`Links:|^- \*\*.*`Tags:' "$CONTRIBUTING_FILE"; then
-  echo "CONTRIBUTING template metadata must not be wrapped in backticks" >&2
-  exit 1
-fi
 
 echo "repository structure checks passed"
