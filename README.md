@@ -29,12 +29,13 @@
 | **CPTI (嗑学人格)** | 测试你的嗑学人格类型。 | 元气小羊饲养员@小红书 | [Demo](https://cpti-mu.vercel.app/) |
 | **FDTI (复旦大学人格测试)** | 复旦大学主题的人格测试。 | [@LinearSakana](https://github.com/LinearSakana) | [Demo](https://fdti.ma-tcha.tech/) / [Repo](https://github.com/LinearSakana/fdti-pages) |
 | **GBTI (股市)** | 20 道题，测试你的交易人格。 | 同花顺公司 | [Demo](https://marketing.ths123.com/gbti) |
+| **HERTI (她的人格地图)** | 历史隐藏了她们, 但你的灵魂里,有一块碎片, 正以她的频率震动。 | Rheaa/VanessaAsher@小红书 | [Demo](https://herti.us) |
 | **LXSTI (留学生人格测试)** | 留学生生存图鉴主题的 16 人格测试，以留学生活场景为切入点，匹配不同的留学生存人格类型。 | MemoryPillow@小红书 | [Demo](https://lxsti.dev/) |
 | **MiaoBTI (猫格测试)** | 测试你的猫格类型。 | PIUPAW比爪@小红书 | [Demo](https://miaobti.icu/) |
 | **PPTY (乒乓球人格测试)** | 乒乓球主题的人格测试。 | 呵呦呦呦呦 | [Demo](https://ppty.pages.dev) |
 | **RBTI （科研人格测试）** | 以 research demo 的表达方式包装 MBTI-type 体验，兼有在线展示和代码仓库。 | [@HenryLau7](https://github.com/HenryLau7) | [Demo](https://research-mbti.com/) / [Repo](https://github.com/HenryLau7/research-mbti) |
 | **SBTI** | 近期最具传播性的 X-BTI 代表之一，把 MBTI 式问卷改造成更强互联网梗感、分享感和角色标签感的人格测试。 | 蛆肉儿串儿@B站 | [Demo](https://www.sbti.to/en/) / [Repo](https://github.com/UnluckyNinja/SBTI-test) |
-| **SDTI** | 新型人格测试。 | *待认领* | [Demo](https://sdtis.com/) |
+| **SDTI** | 新型人格测试。 | Shift开发组等 | [Demo](https://sdtis.com/) |
 | **SJTI (交通大学人格测试)** | 交通大学主题的人格测试。 | *待认领* | [Demo](https://sjti.netlify.app) |
 | **TJTI (同济大学人格测试)** | 同济大学主题的人格测试。 | logex自然对@小红书 | [Demo](https://tjti.netlify.app/) |
 | **TSTI (泰勒斯测试)** | Taylor Swift 主题的人格测试，围绕霉霉粉丝圈层设计。 | 慕容元夜@小红书 | [Demo](https://tsti.murouane.com/) |
