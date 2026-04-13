@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>awesome-mbti - X-BTI / MBTI-like 衍生人格测试合集</title>
+<meta name="description" content="一个收录各种 X-BTI / MBTI-like 衍生人格测试、研究演示与社区项目的 curated list。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #12121a;
+    --bg-card: #1a1a28;
+    --bg-card-hover: #222236;
+    --bg-nav: rgba(10, 10, 15, 0.85);
+    --text-primary: #e8e8f0;
+    --text-secondary: #9a9ab0;
+    --text-muted: #6a6a80;
+    --accent-1: #ff6b6b;
+    --accent-2: #ffa502;
+    --accent-3: #7c5cfc;
+    --accent-4: #36d399;
+    --accent-5: #38bdf8;
+    --accent-6: #f472b6;
+    --border: #2a2a3e;
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --font-body: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+    --font-display: 'Noto Sans SC', 'Inter', system-ui, sans-serif;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg-primary: #fafaf9;
+      --bg-secondary: #f0efed;
+      --bg-card: #ffffff;
+      --bg-card-hover: #f7f6f4;
+      --bg-nav: rgba(250, 250, 249, 0.9);
+      --text-primary: #1a1a1f;
+      --text-secondary: #5a5a6e;
+      --text-muted: #8a8a9e;
+      --border: #e0dfd8;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    padding: 100px 24px 60px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 600px 400px at 30% 20%, rgba(255, 107, 107, 0.08) 0%, transparent 70%),
+      radial-gradient(ellipse 500px 350px at 70% 60%, rgba(124, 92, 252, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-content {
+    position: relative;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 28px;
+  }
+
+  .hero-badge .dot {
+    width: 6px; height: 6px;
+    background: var(--accent-4);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(40px, 8vw, 72px);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-1) 50%, var(--accent-2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-desc {
+    font-size: 17px;
+    color: var(--text-secondary);
+    max-width: 520px;
+    margin: 0 auto 28px;
+    line-height: 1.8;
+  }
+
+  .hero-note {
+    display: inline-block;
+    padding: 10px 18px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    font-size: 13px;
+    color: var(--text-muted);
+    max-width: 520px;
+    line-height: 1.6;
+  }
+
+  .hero-links {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+
+  .hero-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .hero-link.primary {
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+    color: #fff;
+  }
+  .hero-link.primary:hover { opacity: 0.9; transform: translateY(-1px); }
+
+  .hero-link.secondary {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+  }
+  .hero-link.secondary:hover { border-color: var(--accent-3); }
+
+  /* Filter bar */
+  .filter-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg-nav);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 24px;
+  }
+
+  .filter-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .filter-inner::-webkit-scrollbar { display: none; }
+
+  .filter-label {
+    font-size: 13px;
+    color: var(--text-muted);
+    flex-shrink: 0;
+    font-weight: 500;
+  }
+
+  .filter-btn {
+    flex-shrink: 0;
+    padding: 5px 12px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.15s;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-family: var(--font-body);
+  }
+
+  .filter-btn:hover {
+    border-color: var(--text-muted);
+    color: var(--text-primary);
+  }
+
+  .filter-btn.active {
+    border-color: transparent;
+  }
+
+  .filter-btn[data-tag="all"].active { background: var(--text-primary); color: var(--bg-primary); }
+  .filter-btn[data-tag="viral"].active { background: rgba(255,107,107,0.2); color: var(--accent-1); border-color: var(--accent-1); }
+  .filter-btn[data-tag="parody"].active { background: rgba(255,165,2,0.2); color: var(--accent-2); border-color: var(--accent-2); }
+  .filter-btn[data-tag="research"].active { background: rgba(124,92,252,0.2); color: var(--accent-3); border-color: var(--accent-3); }
+  .filter-btn[data-tag="research-inspired"].active { background: rgba(124,92,252,0.15); color: var(--accent-3); border-color: var(--accent-3); }
+  .filter-btn[data-tag="career"].active { background: rgba(54,211,153,0.2); color: var(--accent-4); border-color: var(--accent-4); }
+  .filter-btn[data-tag="fandom"].active { background: rgba(244,114,182,0.2); color: var(--accent-6); border-color: var(--accent-6); }
+  .filter-btn[data-tag="community"].active { background: rgba(56,189,248,0.2); color: var(--accent-5); border-color: var(--accent-5); }
+  .filter-btn[data-tag="demo"].active { background: rgba(54,211,153,0.15); color: var(--accent-4); border-color: var(--accent-4); }
+  .filter-btn[data-tag="repo"].active { background: rgba(56,189,248,0.15); color: var(--accent-5); border-color: var(--accent-5); }
+
+  .filter-count {
+    font-size: 12px;
+    color: var(--text-muted);
+    flex-shrink: 0;
+    margin-left: auto;
+    padding-left: 8px;
+  }
+
+  /* Content */
+  .content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px 24px 96px;
+  }
+
+  /* Project list */
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 20px 24px;
+    transition: all 0.2s;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 8px 20px;
+  }
+
+  .project-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--accent-3);
+    transform: translateY(-1px);
+  }
+
+  .project-card.hidden {
+    display: none;
+  }
+
+  .project-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    grid-column: 1 / -1;
+  }
+
+  .project-name {
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .project-name a {
+    color: var(--text-primary);
+    text-decoration: none;
+  }
+  .project-name a:hover { color: var(--accent-1); }
+
+  .project-links {
+    display: flex;
+    gap: 6px;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+  .project-link:hover { color: var(--accent-5); border-color: var(--accent-5); }
+
+  .project-body {
+    grid-column: 1;
+  }
+
+  .project-desc {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+
+  .project-tags-area {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 100px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  .tag-viral { background: rgba(255,107,107,0.15); color: var(--accent-1); }
+  .tag-parody { background: rgba(255,165,2,0.15); color: var(--accent-2); }
+  .tag-research { background: rgba(124,92,252,0.15); color: var(--accent-3); }
+  .tag-research-inspired { background: rgba(124,92,252,0.1); color: var(--accent-3); }
+  .tag-career { background: rgba(54,211,153,0.15); color: var(--accent-4); }
+  .tag-fandom { background: rgba(244,114,182,0.15); color: var(--accent-6); }
+  .tag-community { background: rgba(56,189,248,0.15); color: var(--accent-5); }
+  .tag-demo { background: rgba(54,211,153,0.1); color: var(--accent-4); }
+  .tag-repo { background: rgba(56,189,248,0.1); color: var(--accent-5); }
+
+  /* No results */
+  .no-results {
+    display: none;
+    text-align: center;
+    padding: 48px 24px;
+    color: var(--text-muted);
+    font-size: 15px;
+  }
+
+  .no-results.visible { display: block; }
+
+  /* Footer */
+  .footer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 48px 24px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .footer-title {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .footer-desc {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    max-width: 460px;
+    margin: 0 auto 20px;
+  }
+
+  .footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+  .footer-link:hover { border-color: var(--accent-3); }
+
+  .footer-bottom {
+    margin-top: 32px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero { padding: 72px 16px 40px; }
+    .content { padding: 24px 16px 64px; }
+    .project-card {
+      grid-template-columns: 1fr;
+      padding: 16px;
+    }
+    .project-links { margin-left: 0; }
+    .filter-bar { padding: 10px 16px; }
+  }
+
+  @media (max-width: 375px) {
+    .hero { padding: 56px 12px 28px; }
+    .content { padding: 16px 12px 48px; }
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent-3);
+    outline-offset: 2px;
+  }
+
+  /* Transition for filter */
+  .project-card {
+    animation: fadeIn 0.2s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="hero-badge"><span class="dot"></span>curated list</div>
+    <h1 data-pretext>awesome-mbti</h1>
+    <p class="hero-desc" data-pretext>
+      收录各种 X-BTI / MBTI-like 衍生人格测试、研究演示与社区项目的合集。
+    </p>
+    <div class="hero-note" data-pretext>
+      这里的项目横跨娱乐、梗图、研究展示与半严肃工具，科学有效性差异很大。默认视为互联网文化项目或产品案例，而非心理测量学背书。
+    </div>
+    <div class="hero-links">
+      <a href="https://github.com/HenryLau7/awesome-mbti" class="hero-link primary" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        GitHub
+      </a>
+      <a href="#projects" class="hero-link secondary">浏览合集 ↓</a>
+    </div>
+  </div>
+</header>
+
+<!-- Filter Bar -->
+<nav class="filter-bar" role="navigation" aria-label="标签筛选">
+  <div class="filter-inner">
+    <span class="filter-label">Filter:</span>
+    <button class="filter-btn active" data-tag="all">All</button>
+    <button class="filter-btn" data-tag="viral">viral</button>
+    <button class="filter-btn" data-tag="parody">parody</button>
+    <button class="filter-btn" data-tag="research">research</button>
+    <button class="filter-btn" data-tag="research-inspired">research-inspired</button>
+    <button class="filter-btn" data-tag="career">career</button>
+    <button class="filter-btn" data-tag="fandom">fandom</button>
+    <button class="filter-btn" data-tag="community">community</button>
+    <button class="filter-btn" data-tag="demo">demo</button>
+    <button class="filter-btn" data-tag="repo">repo</button>
+    <span class="filter-count" id="filter-count">6 个项目</span>
+  </div>
+</nav>
+
+<!-- Project List -->
+<main class="content" id="projects">
+  <div class="projects-list" id="projects-list">
+
+    <!-- SBTI -->
+    <article class="project-card" data-tags="viral parody community demo repo">
+      <div class="project-top">
+        <div class="project-name"><a href="https://github.com/UnluckyNinja/SBTI-test" target="_blank" rel="noopener">SBTI</a></div>
+        <div class="project-links">
+          <a href="https://www.sbti.to/en/" class="project-link" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg>
+            Demo
+          </a>
+          <a href="https://github.com/UnluckyNinja/SBTI-test" class="project-link" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            Repo
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <p class="project-desc" data-pretext contenteditable="true">近年最具传播性的 X-BTI 代表之一，把 MBTI 式问卷改造成更强互联网梗感、分享感和角色标签感的人格测试。</p>
+      </div>
+      <div class="project-tags-area">
+        <span class="tag tag-viral">viral</span>
+        <span class="tag tag-parody">parody</span>
+        <span class="tag tag-community">community</span>
+        <span class="tag tag-demo">demo</span>
+        <span class="tag tag-repo">repo</span>
+      </div>
+    </article>
+
+    <!-- LXSTI -->
+    <article class="project-card" data-tags="viral community demo">
+      <div class="project-top">
+        <div class="project-name"><a href="https://lxsti.dev/" target="_blank" rel="noopener">LXSTI (留学生人格测试)</a></div>
+        <div class="project-links">
+          <a href="https://lxsti.dev/" class="project-link" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg>
+            Demo
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <p class="project-desc" data-pretext contenteditable="true">留学生生存图鉴主题的 16 人格测试，以留学生活场景为切入点，匹配不同的留学生存人格类型。</p>
+      </div>
+      <div class="project-tags-area">
+        <span class="tag tag-viral">viral</span>
+        <span class="tag tag-community">community</span>
+        <span class="tag tag-demo">demo</span>
+      </div>
+    </article>
+
+    <!-- research-mbti -->
+    <article class="project-card" data-tags="research research-inspired demo repo">
+      <div class="project-top">
+        <div class="project-name"><a href="https://github.com/HenryLau7/research-mbti" target="_blank" rel="noopener">research-mbti</a></div>
+        <div class="project-links">
+          <a href="https://research-mbti.com/" class="project-link" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg>
+            Demo
+          </a>
+          <a href="https://github.com/HenryLau7/research-mbti" class="project-link" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            Repo
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <p class="project-desc" data-pretext contenteditable="true">以 research demo 的表达方式包装 MBTI-type 体验，兼有在线展示和代码仓库，适合作为 research-inspired 项目参考。</p>
+      </div>
+      <div class="project-tags-area">
+        <span class="tag tag-research">research</span>
+        <span class="tag tag-research-inspired">research-inspired</span>
+        <span class="tag tag-demo">demo</span>
+        <span class="tag tag-repo">repo</span>
+      </div>
+    </article>
+
+    <!-- ABTI -->
+    <article class="project-card" data-tags="research-inspired career demo repo">
+      <div class="project-top">
+        <div class="project-name"><a href="https://github.com/Traveller2001/ABTI" target="_blank" rel="noopener">ABTI (学术人格测试)</a></div>
+        <div class="project-links">
+          <a href="https://abti.fun/" class="project-link" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg>
+            Demo
+          </a>
+          <a href="https://github.com/Traveller2001/ABTI" class="project-link" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            Repo
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <p class="project-desc" data-pretext contenteditable="true">面向科研工作者的趣味人格测试，覆盖从硕博研究生到博后、青年教师、PI 等各阶段。通过 30 道科研场景题，从 5 大模型、15 个维度分析科研行为模式，匹配 26 种科研人格类型。</p>
+      </div>
+      <div class="project-tags-area">
+        <span class="tag tag-research-inspired">research-inspired</span>
+        <span class="tag tag-career">career</span>
+        <span class="tag tag-demo">demo</span>
+        <span class="tag tag-repo">repo</span>
+      </div>
+    </article>
+
+    <!-- 历史学人格测试 -->
+    <article class="project-card" data-tags="fandom community demo">
+      <div class="project-top">
+        <div class="project-name"><a href="https://xwxq55hqiyjx.meoo.info/#/" target="_blank" rel="noopener">历史学人格测试</a></div>
+        <div class="project-links">
+          <a href="https://xwxq55hqiyjx.meoo.info/#/" class="project-link" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg>
+            Demo
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <p class="project-desc" data-pretext contenteditable="true">基于四大维度、32 道题目，定位你的历史学人格类型，匹配陈寅恪、钱穆、布罗代尔、黄仁宇等 16 位史学宗师。</p>
+      </div>
+      <div class="project-tags-area">
+        <span class="tag tag-fandom">fandom</span>
+        <span class="tag tag-community">community</span>
+        <span class="tag tag-demo">demo</span>
+      </div>
+    </article>
+
+    <!-- TSTI -->
+    <article class="project-card" data-tags="fandom community demo">
+      <div class="project-top">
+        <div class="project-name"><a href="https://tsti.murouane.com/" target="_blank" rel="noopener">TSTI (泰勒斯测试)</a></div>
+        <div class="project-links">
+          <a href="https://tsti.murouane.com/" class="project-link" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="4.5"/><path d="M1.5 6h9M6 1.5c1.5 1.5 2 3 2 4.5s-.5 3-2 4.5M6 1.5c-1.5 1.5-2 3-2 4.5s.5 3 2 4.5"/></svg>
+            Demo
+          </a>
+        </div>
+      </div>
+      <div class="project-body">
+        <p class="project-desc" data-pretext contenteditable="true">Taylor Swift 主题的人格测试，围绕霉霉粉丝圈层设计。原作者：慕容元夜@小红书。</p>
+      </div>
+      <div class="project-tags-area">
+        <span class="tag tag-fandom">fandom</span>
+        <span class="tag tag-community">community</span>
+        <span class="tag tag-demo">demo</span>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="no-results" id="no-results" data-pretext>
+    没有匹配该标签的项目。
+  </div>
+</main>
+
+<footer class="footer">
+  <h2 class="footer-title" data-pretext>投稿与维护</h2>
+  <p class="footer-desc" data-pretext>
+    新条目建议优先附带 Demo、Repo、Paper、Post 中至少一种公开入口。如果项目明显偏娱乐或戏仿，请在描述里直说。
+  </p>
+  <a href="https://github.com/HenryLau7/awesome-mbti" class="footer-link" target="_blank" rel="noopener">
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+    在 GitHub 上投稿
+  </a>
+  <p class="footer-bottom">awesome-mbti &copy; 2025. Open source, community-driven.</p>
+</footer>
+
+<script src="./pretext.js"></script>
+<script>
+(async function() {
+  // Tag filter logic
+  const buttons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.project-card');
+  const countEl = document.getElementById('filter-count');
+  const noResults = document.getElementById('no-results');
+
+  let activeTag = 'all';
+
+  function filterProjects(tag) {
+    activeTag = tag;
+    let visible = 0;
+
+    cards.forEach(card => {
+      const tags = card.dataset.tags.split(' ');
+      const match = tag === 'all' || tags.includes(tag);
+      card.classList.toggle('hidden', !match);
+      if (match) visible++;
+    });
+
+    buttons.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.tag === tag);
+    });
+
+    countEl.textContent = visible + ' 个项目';
+    noResults.classList.toggle('visible', visible === 0);
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => filterProjects(btn.dataset.tag));
+  });
+
+  // Pretext
+  const { prepare, layout } = window.Pretext || {};
+  if (!prepare || !layout) return;
+
+  await document.fonts.ready;
+
+  const elements = document.querySelectorAll('[data-pretext]');
+  const prepared = new Map();
+
+  for (const el of elements) {
+    const font = getComputedStyle(el).font;
+    prepared.set(el, prepare(el.textContent, font));
+  }
+
+  function relayout() {
+    for (const [el, handle] of prepared) {
+      const style = getComputedStyle(el);
+      const lh = parseFloat(style.lineHeight) || parseFloat(style.fontSize) * 1.7;
+      const result = layout(handle, el.clientWidth, lh);
+      if (result && result.height) el.style.height = result.height + 'px';
+    }
+  }
+
+  new ResizeObserver(() => relayout()).observe(document.body);
+  relayout();
+
+  for (const el of elements) {
+    if (el.contentEditable === 'true') {
+      new MutationObserver(() => {
+        prepared.set(el, prepare(el.textContent, getComputedStyle(el).font));
+        relayout();
+      }).observe(el, { characterData: true, subtree: true, childList: true });
+    }
+  }
+})();
+</script>
+
+</body>
+</html>
