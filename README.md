@@ -24,11 +24,13 @@
 |:--------|:------------|:-------|:------|
 | **ABTI (学术人格测试)** | 面向科研工作者的趣味人格测试，覆盖硕博到 PI 各阶段。30 道科研场景题，匹配 26 种科研人格类型。 | [@Traveller2001](https://github.com/Traveller2001) | [Demo](https://abti.fun/) / [Repo](https://github.com/Traveller2001/ABTI) |
 | **ACTI (建人测试)** | 建人测试共20道题 · 7个维度 · 10种人格，本测试平等地攻击每一位建筑从业者。 | *待认领* | [Demo](https://arti-jianrenceshi.netlify.app/) |
+| **acceptTI (科研人格测试)** | 测测你的科研人格。 | *待认领* | [Demo](https://accept-ti.pages.dev/) |
 | **BBTI (测测你是什么鸟？)** | 你的鸟格是什么？ | 什么禽况@微信公众号 | [Demo](https://octsanworld.com/) |
 | **BMTI (羽毛球人格测试)** | 羽毛球 12 型人格测试。 | 正直球场@小红书 | [Demo](https://bmti-badminton-12type-test-gq0opb.leapi.cc/) |
 | **CBTI (程序员行为类型测试)** | 你是 SUDO 还是 NULL？是 996 还是 404？30 道题，测出你的编程人格。 | 程序员鱼皮@B站 | [Demo](https://cbti.codefather.cn/) |
 | **CPTI (嗑学人格)** | 测试你的嗑学人格类型。 | 元气小羊饲养员@小红书 | [Demo](https://cpti-mu.vercel.app/) |
 | **EROS (情感人格类型指标)** | Eros，希腊神话中的爱神，亦是我们理解情感的起点。基于 6 项情感维度的人格映射测试。 | *待认领* | [Demo](https://eros-test.pages.dev/) |
+| **F1TI (F1人格测试)** | Paddock Identity System | 四轮杂货铺@小红书 | [Demo](https://gilded-fairy-1118ac.netlify.app/) |
 | **FDTI (复旦大学人格测试)** | 复旦大学主题的人格测试。 | [@LinearSakana](https://github.com/LinearSakana) | [Demo](https://fdti.ma-tcha.tech/) / [Repo](https://github.com/LinearSakana/fdti-pages) |
 | **GBTI (股市)** | 20 道题，测试你的交易人格。 | 同花顺公司 | [Demo](https://marketing.ths123.com/gbti) |
 | **HERTI (她的人格地图)** | 历史隐藏了她们, 但你的灵魂里,有一块碎片, 正以她的频率震动。 | Rheaa/VanessaAsher@小红书 | [Demo](https://herti.us) |
@@ -38,6 +40,7 @@
 | **MUSICALTI (音乐剧人格测试)** | 你的百老汇灵魂密码。 | *待认领* | [Demo](https://pub-98e77454d5fc46438fe6f46cf574e4e5.r2.dev/%E9%9F%B3%E4%B9%90%E5%89%A7%E4%BA%BA%E6%A0%BC%E6%B5%8B%E8%AF%95.html) |
 | **NCTD (人格测试)** | 24 道题，解锁你的成员动物灵魂。 | *待认领* | [Demo](https://share.htmlput.com/p/2z01mffgsg?lang=zh) |
 | **PPTI (导师类型测试)** | 基于 30 个核心行为特征，解读导师风格。 | 导师星球LAB@小红书 | [Demo](https://ppti.phdogreports.com/) |
+| **PPTI (人类精神图鉴)** | 在必须假装正常的时代，承认自己有病，是一场最伟大的反叛。这不仅仅是一次测试，更是一场精神的临床问诊。 | who-ology@小红书 | [Demo](https://who-ology.buzz/) |
 | **PPTY (乒乓球人格测试)** | 乒乓球主题的人格测试。 | 呵呦呦呦呦 | [Demo](https://ppty.pages.dev) |
 | **RBTI (科研人格测试)** | 以 research demo 的表达方式包装 MBTI-type 体验，兼有在线展示和代码仓库。 | [@HenryLau7](https://github.com/HenryLau7) | [Demo](https://research-mbti.com/) / [Repo](https://github.com/HenryLau7/research-mbti) |
 | **SBTI** | 近期最具传播性的 X-BTI 代表之一，把 MBTI 式问卷改造成更强互联网梗感、分享感和角色标签感的人格测试。 | 蛆肉儿串儿@B站 | [Demo](https://www.sbti.to/en/) / [Repo](https://github.com/UnluckyNinja/SBTI-test) |
