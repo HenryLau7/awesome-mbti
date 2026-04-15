@@ -29,7 +29,7 @@
 | **BMTI (羽毛球人格测试)** | 羽毛球 12 型人格测试。 | 正直球场@小红书 | [Demo](https://bmti-badminton-12type-test-gq0opb.leapi.cc/) |
 | **CBTI (程序员行为类型测试)** | 你是 SUDO 还是 NULL？是 996 还是 404？30 道题，测出你的编程人格。 | 程序员鱼皮@B站 | [Demo](https://cbti.codefather.cn/) |
 | **CPTI (嗑学人格)** | 测试你的嗑学人格类型。 | 元气小羊饲养员@小红书 | [Demo](https://cpti-mu.vercel.app/) |
-| **EROS (情感人格类型指标)** | Eros，希腊神话中的爱神，亦是我们理解情感的起点。基于 6 项情感维度的人格映射测试。 | *待认领* | [Demo](https://eros-test.pages.dev/) |
+| **EROS (情感人格类型指标)** | Eros，希腊神话中的爱神，亦是我们理解情感的起点。基于 6 项情感维度的人格映射测试。 | 忧郁是一种天赋@小红书 | [Demo](https://eros-test.pages.dev/) |
 | **F1TI (F1人格测试)** | Paddock Identity System | 四轮杂货铺@小红书 | [Demo](https://gilded-fairy-1118ac.netlify.app/) |
 | **FDTI (复旦大学人格测试)** | 复旦大学主题的人格测试。 | [@LinearSakana](https://github.com/LinearSakana) | [Demo](https://fdti.ma-tcha.tech/) / [Repo](https://github.com/LinearSakana/fdti-pages) |
 | **GBTI (股市)** | 20 道题，测试你的交易人格。 | 同花顺公司 | [Demo](https://marketing.ths123.com/gbti) |
