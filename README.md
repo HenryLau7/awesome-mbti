@@ -36,13 +36,17 @@
 | **FDTI (复旦大学人格测试)** | 复旦大学主题的人格测试。 | [@LinearSakana](https://github.com/LinearSakana) | [Demo](https://fdti.ma-tcha.tech/) / [Repo](https://github.com/LinearSakana/fdti-pages) |
 | **GBTI (股市)** | 20 道题，测试你的交易人格。 | 同花顺公司 | [Demo](https://marketing.ths123.com/gbti) |
 | **HERTI (她的人格地图)** | 历史隐藏了她们, 但你的灵魂里,有一块碎片, 正以她的频率震动。 | Rheaa/VanessaAsher@小红书 | [Demo](https://herti.us) |
+| **IVLTI (第五人格测试)** | 测测你最像IVL里的谁。 | 月亮成瘾症@小红书 | [Demo](https://ivlti.asia/) |
 | **JCCMBTI (金铲铲人格测试)** | 16道题目，测出你的金铲铲人格，内含4种稀有人格！你能触发「含家铲」「狗运铲」吗？ | 悲伤的起早了@小红书 | [Demo](https://jccmbti.netlify.app/) |
 | **LXSTI (留学生人格测试)** | 留学生生存图鉴主题的 16 人格测试，以留学生活场景为切入点，匹配不同的留学生存人格类型。 | MemoryPillow@小红书 | [Demo](https://lxsti.dev/) |
+| **MBTI (数学人格测试·Galois37)** | 测测你的数学人格类型。 | Galois37 | [Demo](https://galois37.github.io/math.mbti-test/) |
+| **MBTI (数学人格测试·Fiddie)** | 测测你是什么样的数学人。 | Fiddie@知乎、B站 | [Demo](https://fiddiemath.github.io/MathMBTI/) |
 | **MiaoBTI (猫格测试)** | 测试你的猫格类型。 | PIUPAW比爪@小红书 | [Demo](https://miaobti.icu/) |
 | **MPTI (导师人格测试)** | 站在学生视角，用日常行为题识别导师人格。不是严肃评价系统，更像一份高效、克制但不失礼貌的学术圈段子生成器。 | Traveller@小红书 | [Demo](https://mpti.fun/) / [Repo](https://github.com/Traveller2001/MPTI) |
 | **MUSICALTI (音乐剧人格测试)** | 你的百老汇灵魂密码。 | *待认领* | [Demo](https://pub-98e77454d5fc46438fe6f46cf574e4e5.r2.dev/%E9%9F%B3%E4%B9%90%E5%89%A7%E4%BA%BA%E6%A0%BC%E6%B5%8B%E8%AF%95.html) |
 | **NCTD (人格测试)** | 24 道题，解锁你的成员动物灵魂。 | *待认领* | [Demo](https://share.htmlput.com/p/2z01mffgsg?lang=zh) |
 | **NMTI** | 31道题，测出你的职场人格 | Whisper@小红书 | [Demo](https://nmti-64m.pages.dev/) / [Repo](https://github.com/SEUWanglibo/NMTI) |
+| **PHBI (物理学家人格测试)** | 用 40 道问题，测出你最接近哪位物理学家原型。 | Physhan@小红书 | [Demo](https://physicist-archetypes.vercel.app/) |
 | **PPTI (导师类型测试)** | 基于 30 个核心行为特征，解读导师风格。 | 导师星球LAB@小红书 | [Demo](https://ppti.phdogreports.com/) |
 | **PPTI (人类精神图鉴)** | 在必须假装正常的时代，承认自己有病，是一场最伟大的反叛。这不仅仅是一次测试，更是一场精神的临床问诊。 | who-ology@小红书 | [Demo](https://who-ology.buzz/) |
 | **PPTY (乒乓球人格测试)** | 乒乓球主题的人格测试。 | 呵呦呦呦呦 | [Demo](https://ppty.pages.dev) |
