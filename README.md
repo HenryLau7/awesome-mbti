@@ -39,6 +39,7 @@
 | **IVLTI (第五人格测试)** | 测测你最像IVL里的谁。 | 月亮成瘾症@小红书 | [Demo](https://ivlti.asia/) |
 | **JCCMBTI (金铲铲人格测试)** | 16道题目，测出你的金铲铲人格，内含4种稀有人格！你能触发「含家铲」「狗运铲」吗？ | 悲伤的起早了@小红书 | [Demo](https://jccmbti.netlify.app/) |
 | **LXSTI (留学生人格测试)** | 留学生生存图鉴主题的 16 人格测试，以留学生活场景为切入点，匹配不同的留学生存人格类型。 | MemoryPillow@小红书 | [Demo](https://lxsti.dev/) |
+| **MBTI USA** | 英文 MBTI-style 免费测试，包含 16 型结果、关系匹配、职业方向和 attachment-style 关系测试入口。 | [MBTI USA](https://mbtiusa.com/) | [Demo](https://mbtiusa.com/test?utm_source=github&utm_medium=external_awesome_list&utm_campaign=backlink_foundation_20260617&utm_content=henrylau7_awesome_mbti__to__mbti_test) |
 | **MBTI (数学人格测试·Galois37)** | 测测你的数学人格类型。 | Galois37 | [Demo](https://galois37.github.io/math.mbti-test/) |
 | **MBTI (数学人格测试·Fiddie)** | 测测你是什么样的数学人。 | Fiddie@知乎、B站 | [Demo](https://fiddiemath.github.io/MathMBTI/) |
 | **MiaoBTI (猫格测试)** | 测试你的猫格类型。 | PIUPAW比爪@小红书 | [Demo](https://miaobti.icu/) |
