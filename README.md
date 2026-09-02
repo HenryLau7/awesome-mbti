@@ -63,6 +63,7 @@
 | **TJTI (同济大学人格测试)** | 同济大学主题的人格测试。 | logex自然对@小红书 | [Demo](https://tjti.netlify.app/) |
 | **TSTI (泰勒斯测试)** | Taylor Swift 主题的人格测试，围绕霉霉粉丝圈层设计。 | 慕容元夜@小红书 | [Demo](https://tsti.murouane.com/) |
 | **VAETI (呼吸之野)** | 十首歌，十种人格。在歌词的呼吸里，找到你灵魂栖居的那片旷野。 | 木尧工作室 | [Demo](http://101.42.231.244:12514/) |
+| **World Flag Map Travel Personality Quiz** | 用 12 道旅行场景题匹配熟悉的四字母类型和 16 种原创旅行原型，再根据风景、节奏和饮食偏好给出三个国家建议。属于娱乐性测试，不是正式心理测评。 | World Flag Map | [Demo](https://worldflagmap.com/travel-personality/) |
 | **WTFTI** | 一份写给当代女性的人格图鉴。同一个你，在不同宇宙里，被翻译成完全不同的样子。 | 洛拉AI@小红书 | [Demo](https://www.wtfti.com/) |
 | **WTM (我不太聪明人格测试)** | 这是一个专门为“人间清醒但偶尔犯迷糊”的聪明人们准备的趣味测试！ | Samuel拍档@小红书 | [Demo](https://www.axureshow.com/yanshi/2GR4Jres/) |
 | **XCTI (新传人格测试)** | 一个测试你更像哪个传播学流派的娱乐性人格测试。 | SATELLITE@小红书 | [Demo](https://xiaochunlilywang.github.io/XCTI/) |
