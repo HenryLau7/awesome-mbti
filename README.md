@@ -38,6 +38,7 @@
 | **HERTI (她的人格地图)** | 历史隐藏了她们, 但你的灵魂里,有一块碎片, 正以她的频率震动。 | Rheaa/VanessaAsher@小红书 | [Demo](https://herti.us) |
 | **IVLTI (第五人格测试)** | 测测你最像IVL里的谁。 | 月亮成瘾症@小红书 | [Demo](https://ivlti.asia/) |
 | **JCCMBTI (金铲铲人格测试)** | 16道题目，测出你的金铲铲人格，内含4种稀有人格！你能触发「含家铲」「狗运铲」吗？ | 悲伤的起早了@小红书 | [Demo](https://jccmbti.netlify.app/) |
+| **Loretypes Archetype (原型人格测试)** | 24 道日常情境题、5 组两极维度、原创 10 种类型（不是 MBTI 四字母，也不沿用其类型），给出主导类型 + 辅助类型和各维度倾向分；英文、免费、无需注册，仅供自我反思和娱乐。 | [@zizhu-ai](https://github.com/zizhu-ai) | [Demo](https://loretypes.com/archetype/) |
 | **LXSTI (留学生人格测试)** | 留学生生存图鉴主题的 16 人格测试，以留学生活场景为切入点，匹配不同的留学生存人格类型。 | MemoryPillow@小红书 | [Demo](https://lxsti.dev/) |
 | **MBTI (数学人格测试·Galois37)** | 测测你的数学人格类型。 | Galois37 | [Demo](https://galois37.github.io/math.mbti-test/) |
 | **MBTI (数学人格测试·Fiddie)** | 测测你是什么样的数学人。 | Fiddie@知乎、B站 | [Demo](https://fiddiemath.github.io/MathMBTI/) |
